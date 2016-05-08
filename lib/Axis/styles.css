@@ -1,0 +1,7 @@
+.root path,
+.root line {
+    fill: none;
+    stroke: gray;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
