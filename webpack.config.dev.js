@@ -7,9 +7,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    'webpack-hot-middleware/client',
     'react-hot-loader/patch',
-    path.join(__dirname, 'examples/main.js')
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    './examples/main.js'
   ],
   output: {
     path: path.join(__dirname, '/dist/'),
@@ -47,6 +48,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.jsx', '.js', '.json']
-  },
-  _hotPort: 8000
+  }
 };

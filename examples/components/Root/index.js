@@ -2,11 +2,13 @@ import React from 'react';
 import { Router, hashHistory } from 'react-router';
 import routes from '../../routes';
 
-const Root = () => (
-  <Router
-    children={routes}
-    history={hashHistory}
-  />
-);
-
-export default Root;
+export default class Root extends React.Component {
+  render() {
+    return (
+      <Router
+        children={routes}
+        history={hashHistory}
+      />
+    );
+  }
+}

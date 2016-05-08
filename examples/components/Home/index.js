@@ -8,7 +8,7 @@ import data from '../../data.json';
 
 const parseDate = d3.time.format("%y-%b-%d").parse;
 const formatPercent = d3.format(".0%");
-const color = d3.scale.category10()
+const color = d3.scale.category20()
   .domain(Object.keys(data));
 
 const stack = d3.layout.stack()
@@ -44,7 +44,6 @@ const Home = () => (
         )
       }
     </D3>
-
     <h1>Line Chart</h1>
     <D3 width={760} height={260} margin={{left: 50}}>
       <Axis
