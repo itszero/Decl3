@@ -15,7 +15,7 @@ const browsers = Object.keys(data).map((key) => ({
 }));
 
 const LineChart = () => (
-  <D3 width={500} height={260} margin={{left: 50}}>
+  <D3 width={600} height={260} margin={{left: 50}}>
     <Axis
       axis='x'
       scale={d3.time.scale().range([0, 760]).domain(d3.extent(data.ie, (d) => parseDate(d.date)))}
