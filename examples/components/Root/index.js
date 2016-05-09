@@ -1,10 +1,10 @@
 import React from 'react';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import App from '../App';
 import Home from '../Home';
 
 const Root = () => (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route component={App}>
       <Route path="/" component={Home} />
     </Route>
