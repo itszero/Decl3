@@ -1,14 +1,14 @@
 import React from 'react';
-import { Router, hashHistory } from 'react-router';
-import routes from '../../routes';
+import { Router, Route, hashHistory } from 'react-router';
+import App from '../App';
+import Home from '../Home';
 
-export default class Root extends React.Component {
-  render() {
-    return (
-      <Router
-        children={routes}
-        history={hashHistory}
-      />
-    );
-  }
-}
+const Root = () => (
+  <Router history={hashHistory}>
+    <Route component={App}>
+      <Route path="/" component={Home} />
+    </Route>
+  </Router>
+);
+
+export default Root;

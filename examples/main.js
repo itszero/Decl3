@@ -2,7 +2,6 @@ import { AppContainer } from 'react-hot-loader';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, hashHistory } from 'react-router';
-import routes from './routes';
 import Root from './components/Root';
 
 ReactDOM.render(
