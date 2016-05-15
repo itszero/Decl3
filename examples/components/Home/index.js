@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 import LineChart from './LineChart';
 import React from 'react';
+import ScatterPlotChart from './ScatterPlotChart';
 import StackedAreaChart from './StackedAreaChart';
 
 import styles from './styles.css';
@@ -8,6 +9,10 @@ import styles from './styles.css';
 const sanitize = (str) => str.toLowerCase().replace(/ /, '_');
 
 const examples = [
+  {
+    name: 'Scatter Plot',
+    component: (<ScatterPlotChart/>)
+  },
   {
     name: 'Stacked Area Chart',
     component: (<StackedAreaChart/>)
