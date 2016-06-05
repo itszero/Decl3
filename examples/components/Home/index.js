@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import LineChart from './LineChart';
+import BarChart from './BarChart';
 import React from 'react';
 import StackedAreaChart from './StackedAreaChart';
 
@@ -15,6 +16,10 @@ const examples = [
   {
     name: 'Line Chart',
     component: (<LineChart/>)
+  },
+  {
+    name: 'Bar Chart',
+    component: (<BarChart/>)
   }
 ];
 
